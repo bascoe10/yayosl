@@ -9,7 +9,7 @@ body, html{
 }
 .pimg1, .pimg2, .pimg3 {
   position: relative;
-  opacity: 0.70;
+  /* opacity: 0.70; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,16 +52,14 @@ body, html{
   top: 50%;
   width: 100%;
   text-align: center;
-  font-size: 70px;
+  font-size: 90px;
   letter-spacing: 6px;
   text-transform: uppercase;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 
 .ptext .border{
-  background-color: #111;
-  color: #fff;
   padding-left: 0.6%;
 }
 
@@ -76,4 +74,24 @@ body, html{
 
 .brand-logo {
   margin-left: 1%;
+}
+
+@media(max-width: 425px) {
+  nav .brand-logo {
+    font-size: 1.7rem;
+  }
+
+  .pimg1, .pimg2, .pimg3 {
+    background-attachment: scroll;
+  }
+}
+
+@media(max-width: 1440px) {
+  .ptext {
+    font-size: 50px;
+  }
+
+  .projects .border{
+    font-size: 30px;
+  }
 }
